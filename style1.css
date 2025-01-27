@@ -1,0 +1,150 @@
+/* General Rules (to whole website domain) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(24, 26, 27);
+    min-height: 100vh;
+}
+
+div{
+    color: rgb(255, 255, 255);
+
+}
+.page-title{
+    padding-top: 50px;
+}
+
+.fixed-top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: #444;
+    transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #555;
+    color: #f1f1f1;
+}
+
+.nav-link span {
+    position: relative;
+}
+
+.nav-link span::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f1f1f1;
+    transition: width 0.3s;
+}
+
+.nav-link:hover span::after {
+    width: 100%;
+}
+
+/* Home Page Style */
+.HomePage{
+    display: flex;
+}
+.profile-side {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.profile-side img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+.profile-info {
+    text-align: center;
+}
+.profile-subtext {
+    margin: 10px 0;
+    color: #333;
+}
+.network-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.network-icons li a {
+    text-decoration: none;
+    color: #0077b5;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.network-icons li a:hover {
+    color: #005582;
+}
+
+.description-side {
+    flex: 2;
+    padding: 20px;
+}
+.description-side h1 {
+    margin-top: 0;
+}
+.description-side ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.description-side ul li {
+    margin-bottom: 10px;
+}
+
+.AboutMe{
+    padding-top: 49px;
+
+}
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .profile-side {
+        box-shadow: none;
+    }
+}
+
+/* Projects Webpage */
+.page-title{
+    padding-top: 50px;
+}
+

@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(24, 26, 27);
     min-height: 100vh;
+    margin-top: 60px;
 }
 
 div{
@@ -11,7 +12,7 @@ div{
 
 }
 .page-title{
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 .fixed-top-bar {
@@ -144,48 +145,63 @@ div{
 }
 
 /*-------------------- Skills/Resume Webpage --------------------*/
-.resume-container{ 
-    flex: 1;   
-    /* background-color: #f4f4f4; */
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    /* padding-top: 70px; */
+.skills-page{
+    display: flex;
+    /* flex-direction: column;
+    min-height: 110vh; */
+    /* margin: 10px; */
+    margin-top: 50px;
 }
 
-/* .resume-embedded{
-    max-width: 750px;
-    max-height: 500px;
-    width: 85%;
-    height: 500px;
-    align-content: center;
-} */
 .resume-container {
     flex: 1;
-    border-right: 1px solid #ccc;
-    overflow: hidden;
+    /* overflow: hidden; */
+    padding-top: 20px;
+    max-width: 750px;
+    height: 500px;
 }
 
 .resume-container iframe {
+    max-width: 760px;
+    max-height: 500px;
     width: 100%;
     height: 100%;
     border: none;
 }
-.qualifications-container{
+
+.skills-container{
     flex: 1;
     padding: 20px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+    margin-top: 40px;
 }
-.skills-section{
+.skills-section h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
 
+.skills-section p{
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /*-------------------- Projects Webpage -------------------- */
-
+.portfolio-page{
+    /* margin: 10px; */
+    margin-top: 80px;
+}
 .project-container{
 
 }
 .project-image-section{
 
+}
+.project-image-section img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 25%;
+    display: block;
+    margin: 0 auto 20px;
 }
 .project-text-section{
 

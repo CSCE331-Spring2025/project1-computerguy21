@@ -1,0 +1,130 @@
+/* General Reset */
+body, h1, h2, p, ul, li, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding-top: 60px; /* To account for fixed navbar */
+}
+
+/* Navigation Bar */
+.fixed-top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Content Section */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+article {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 1rem;
+    /* margin-bottom: 15px; */
+}
+
+article img {
+    display: block;
+    max-width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-self: center;
+}
+
+article a{
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #34495e;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+footer textarea {
+    width: 80%;
+    height: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+footer textarea:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}

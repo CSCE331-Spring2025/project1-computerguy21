@@ -12,7 +12,8 @@ div{
 
 }
 .page-title{
-    /* padding-top: 50px; */
+    margin: 10px;
+    padding-top: 1px;
 }
 
 .fixed-top-bar {
@@ -159,6 +160,7 @@ div{
     padding-top: 20px;
     max-width: 750px;
     height: 500px;
+    margin-left: 10px;
 }
 
 .resume-container iframe {
@@ -186,12 +188,9 @@ div{
 }
 
 /*-------------------- Projects Webpage -------------------- */
-.portfolio-page{
-    /* margin: 10px; */
-    margin-top: 80px;
-}
-.project-container{
 
+.project-container{
+    margin: 10px;
 }
 .project-image-section{
 
@@ -209,12 +208,153 @@ div{
 
 
 /*-------------------- Service Webpage --------------------*/
-.service-container{
+.service-page-container{
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+}
 
+.service-container{
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .service-image-section{
 
 }
 .service-text-section{
 
+}
+
+/*-------------------- Semiconduct and AI Webpage --------------------*/
+/* General Reset */
+/* body, h1, h2, p, ul, li, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.AI-generated-page {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding-top: 60px; /* To account for fixed navbar */
+}
+
+/* Navigation Bar */
+.AI-generated-page .fixed-top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.AI-generated-page .navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.AI-generated-page .nav-item {
+    display: inline;
+}
+
+.AI-generated-page .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+    background-color: #2c3e50;
+}
+
+.AI-generated-page .nav-link:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* Header */
+.AI-generated-page header {
+    text-align: center;
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.AI-generated-page header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Content Section */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.AI-generated-page article {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.AI-generated-page article h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.AI-generated-page article p {
+    font-size: 1rem;
+    /* margin-bottom: 15px; */
+}
+
+.AI-generated-page article img {
+    display: block;
+    max-width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-self: center;
+}
+
+.AI-generated-page article a{
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.AI-generated-page footer {
+    text-align: center;
+    background: #34495e;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.AI-generated-page footer textarea {
+    width: 80%;
+    height: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.AI-generated-page footer textarea:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
 }

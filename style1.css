@@ -11,6 +11,15 @@ div{
     color: rgb(255, 255, 255);
 
 }
+
+section{
+    color: rgb(255, 255, 255);
+
+}
+header{
+    color: rgb(255, 255, 255);
+
+}
 .page-title{
     margin: 10px;
     padding-top: 1px;
@@ -73,8 +82,12 @@ div{
 }
 
 /*-------------------- Home Page Style -------------------- */
-.HomePage{
+.HomePage .content{
     display: flex;
+    min-height: 100vh;
+}
+.profile-page-header{
+    display: none;
 }
 .profile-container {
     flex: 1;
@@ -294,10 +307,11 @@ div{
 }
 
 /* Content Section */
-.content {
+.AI-generated-page .content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    color: black;
 }
 
 .AI-generated-page article {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Armijo - Projects</title>
-    <link rel="stylesheet" href="style2.css" />
+    <link name="mainStyleSheet" rel="stylesheet" href="style2.css" />
     <script
       src="https://kit.fontawesome.com/c2bdbf7f1e.js"
       crossorigin="anonymous"
@@ -54,15 +54,23 @@
           />
         </div>
         <article class="project-text-section">
-          <h2>ARMv8 Processor (single-cycle)</h2>
+          <h2>MIPS Processor (single-cycle)</h2>
           <h3>Texas A&M University - date</h3>
           <p>
             One of the projects that has been on my waitlist as of recently. I
             originally developed a single-cycle MIPS processor for my computer
-            architecture class as one of the class projects. I am looking
-            forward to building upon this single-cycle processor and develop a
-            more modern version of it, especially with the knowledge that I will
-            be gaining from my Advanced Computer Architecture class.
+            architecture class as one of the class projects. The single-cycle processor included
+            a program counter, controller, 32-bit register file, sign-extender, ALU, and data/instruction memory
+            the data and instruction memories are separated for the time being as a band-aid fix for structural hazards
+            when I start implementing a pipeline to the processor.
+            I am looking forward to building upon this single-cycle processor and develop a
+            more modern version of it. These modifications include pipelining, as mentioned earlier, and a
+            basic implementation of a 2-bit branch predictor. With the knowledge I will
+            be gaining from my Advanced Computer Architecture class, I will be implementing
+            a Superscalar processor to further improve throughput through instruction parallelism and implement a basic cache design.
+            Future problems that I may have to tackle when implementing these include data and control (branching) dependencies and will
+            think of a solution to solve for these problems. The skills I will be gaining from this endeavor definitely includes enhancing
+            my verilog debugging skills and learn to use other tools suhc as surf, a gtkwave alternative with more beautiful graphics.
           </p>
           <ul class="References">
             <li>
@@ -97,15 +105,17 @@
           <h3>Self-completed - date</h3>
           <p>
             This is one of the projects that I've been most proud of. This was
-            develop to expedite the process of my AP environmental science
+            develop to expedite the process of my environmental science
             project that required me to play a game of Monopoly with set rules
             and see how the number of players affected environmental resources.
             I took upon the challenge and developed a simulation that would take
             a couple of seconds to produce an output that would otherwise take
             hours of tedious playing and recording results. This project was
-            develop in Java in a minimalistic IDE to test my computer science
-            knowledge by using Queues, Stacks, and Object Oriented Programming
-            (OOP) such as interfaces, abstract classes, and inheritance.
+            developed in Java in a minimalistic IDE to test my computer science
+            knowledge by translating the original game's object traits and organized them into 
+            1 interface, 8 object classes, and 4 data structures such as arrays, stacks, queues, and linked lists.
+            The game output was put into a file thorugh BufferedWriter and was used to extrapolate future behavior and
+            predict outcomes when the number of players changes.
           </p>
           <ul class="References">
             <li>

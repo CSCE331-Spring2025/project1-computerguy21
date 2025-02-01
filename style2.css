@@ -12,10 +12,6 @@ body {
     margin: 0;
     padding-top: 60px; /* To account for fixed navbar */
 }
-header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
 /* Header */
 header {
     text-align: center;
@@ -24,6 +20,11 @@ header {
     padding: 20px 10px;
     margin-bottom: 20px;
 }
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
 /* div {
     background: white;
     padding: 15px;
@@ -31,14 +32,11 @@ header {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 } */
-article h2 {
-    font-size: 1.8rem;
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-article p {
-    font-size: 1rem;
-    /* margin-bottom: 15px; */
+/* Content Section */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 article {
     background: white;
@@ -47,11 +45,14 @@ article {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-/* Content Section */
-.content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+article h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+article p {
+    font-size: 1rem;
+    /* margin-bottom: 15px; */
 }
 article img {
     display: block;
@@ -115,11 +116,25 @@ footer textarea:focus {
     color: white;
     font-size: 18px;
     padding: 5px 15px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, text-decoration 0.3s;
 }
 .nav-link:hover {
     background-color: #34495e;
     border-radius: 5px;
+}
+.nav-link span {
+    position: relative;
+}
+
+.nav-link span::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f1f1f1;
+    transition: width 0.3s;
 }
 
 /*-------------------- Home Page Style --------------------*/
@@ -170,6 +185,66 @@ footer textarea:focus {
 }
 .References{
     margin: 5px 0px 5px;
+}
+
+/*-------------------- Skills/Qualifications Webpage --------------------*/
+.skills-page{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.resume-container{
+    justify-self: center;
+    justify-items: center;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+.resume-container h2{
+    justify-self: center;
+    margin-top: 10px;
+}
+.resume-container iframe{
+    min-width: 500px;
+    min-height: 500px;
+}
+
+/*-------------------- Service Webpage --------------------*/
+.service-page-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.service-container{
+    justify-items: center;
+    max-width: 500px;
+    width: 40vw;
+    min-width: 275px;
+    margin: 0px 1vw 10px 1vw;
+}
+.service-container i{
+    font-size: 7rem;
+    display: block;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-self: center;
+}
+.service-container img{
+   max-width: 500px;
+   max-height: 500px;
+   width: 50%;
+   height: 50%; 
+}
+.service-container h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.service-text-section{
+    justify-items: center;
 }
 /*-------------------- Semiconduct and AI Webpage --------------------*/
 

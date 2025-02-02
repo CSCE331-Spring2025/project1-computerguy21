@@ -1,10 +1,5 @@
 var num = 0; // global variable
 
-function button1() {
-    num++;
-    document.getElementById("output").innerHTML = "Press x " + num;
-}
-
 function toggleStyleSheet(){
     // Task 1
     // Steps
@@ -16,11 +11,11 @@ function toggleStyleSheet(){
    
     // 1 (c) Determine new stylesheet file name
     var newss
-    if(styleAttribute == "light.css"){
-        newss = "dark.css";
+    if(styleAttribute == "style1.css"){
+        newss = "style2.css";
     }
     else{
-        newss = "light.css";
+        newss = "style1.css";
     }
 
     // 1 (d) replace stylesheet with new stylesheet (hint: element.setAttribute)

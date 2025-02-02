@@ -2,7 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: rgb(24, 26, 27);
+    line-height: 1.6;
+    background-color: #181C14;
     min-height: 100vh;
     margin-top: 60px;
 }
@@ -17,12 +18,31 @@ section{
 
 }
 header{
-    color: rgb(255, 255, 255);
-
+    margin-bottom: 20px;
+    margin: 10px;
+    padding: 20px 10px;
+    padding-top: 1px;
+    background-color: #ECDFCC;
+    color: black;
+    margin-top: 80px;
+    border: 10px;
+    padding-left: 20px;
+    border-style: outset;
+    border-color: beige;
+}
+header h1{
+    font-size: 2.75rem;
+}
+article {
+    color: white;
+    background-color: #3C3D37;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
 }
 .page-title{
-    margin: 10px;
-    padding-top: 1px;
+    
 }
 
 .fixed-top-bar {
@@ -40,6 +60,7 @@ header{
     list-style: none;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .nav-item {
@@ -82,19 +103,31 @@ header{
 }
 
 /*-------------------- Home Page Style -------------------- */
+.HomePage{
+    margin-top: 80px;
+}
 .HomePage .content{
     display: flex;
     min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.profile-page-header{
+.HomePage header{
     display: none;
+}
+.HomePage h1{
+    font-size: 2rem;
 }
 .profile-container {
     flex: 1;
+    min-width: fit-content;
     background-color: #f4f4f4;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     padding-top: 70px;
+    border-left: 30px;
+    border-style: groove;
+    border-color: #697565;
 }
 .profile-container img {
     width: 100%;
@@ -131,6 +164,9 @@ header{
 .description-side {
     flex: 2;
     padding: 20px;
+    margin: 0px 10px 20px;
+    min-width: 50vw;
+
 }
 .description-side h1 {
     margin-top: 0;
@@ -161,34 +197,42 @@ header{
 /*-------------------- Skills/Resume Webpage --------------------*/
 .skills-page{
     display: flex;
-    /* flex-direction: column;
-    min-height: 110vh; */
-    /* margin: 10px; */
-    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: fit-content;
+    align-items: stretch;
+    gap: 10px;
+    margin: 0px 6px
 }
 
 .resume-container {
-    flex: 1;
-    /* overflow: hidden; */
+    flex: 0.97;
     padding-top: 20px;
-    max-width: 750px;
-    height: 500px;
-    margin-left: 10px;
+    min-width: 300px;
+    height: fit-content;
+}
+
+.resume-container h2{
+    font-size: 1.75rem;
 }
 
 .resume-container iframe {
     max-width: 760px;
-    max-height: 500px;
+    max-height: 700px;
     width: 100%;
-    height: 100%;
+    height: 700px;
     border: none;
+    justify-items: center;
 }
 
 .skills-container{
-    flex: 1;
+    flex: 0.97;
     padding: 20px;
-    /* overflow-y: auto; */
-    margin-top: 40px;
+    min-width: 40vw;
+}
+.skills-container article{
+    background-color: #697565;
 }
 .skills-section h3{
     font-size: 24px;
@@ -204,9 +248,15 @@ header{
 
 .project-container{
     margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
 }
 .project-image-section{
-
+    min-width: 45vw;
+    flex: 0.95;
 }
 .project-image-section img{
     width: 100%;
@@ -216,7 +266,8 @@ header{
     margin: 0 auto 20px;
 }
 .project-text-section{
-
+    min-width: 40vw;
+    flex: 0.95;
 }
 
 
@@ -225,18 +276,20 @@ header{
     display: flex;
     margin: 10px;
     padding: 5px;
+    flex-direction: column;
 }
 
 .service-container{
+    display: flex;
     margin: 5px;
     margin-left: 5px;
     margin-right: 5px;
 }
 .service-image-section{
-
+    flex: 0.3;
 }
 .service-text-section{
-
+    flex: 1;
 }
 
 /*-------------------- Semiconduct and AI Webpage --------------------*/

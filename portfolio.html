@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Armijo - Projects</title>
-    <link name="mainStyleSheet" rel="stylesheet" href="style2.css" />
+    <link id="mainStyleSheet" rel="stylesheet" href="style2.css" />
     <script
       src="https://kit.fontawesome.com/c2bdbf7f1e.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="portfolio-page">
+  <body>
     <nav class="fixed-top-bar">
       <ul class="navbar">
         <li class="nav-item">
@@ -38,6 +38,11 @@
             <span>Semiconductor + AI</span>
           </a>
         </li>
+        <li class="nav-item">
+        <a class="nav-link" href="javascript:;" onclick="toggleStyleSheet()" title="Change Theme">
+            <span><i class="fa fa-paint-brush" aria-hidden="true"></i></span>
+          </a>
+      </li>
       </ul>
     </nav>
 
@@ -138,5 +143,6 @@
         </article>
       </article>
     </main>
+    <script src="functions.js"></script>
   </body>
 </html>

@@ -4,117 +4,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Armijo - Projects</title>
-    <!-- <link rel="stylesheet" href="style1.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/c2bdbf7f1e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="portfolio-page">
+  <body>
     <nav class="fixed-top-bar">
       <ul class="navbar">
         <li class="nav-item">
-          <a class="nav-link" href="index_HTML.html">
+          <a class="nav-link" href="index.html">
             <span>Home</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="portfolio_HTML.html">
+          <a class="nav-link" href="portfolio.html">
             <span>Projects</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="qualifications_HTML.html">
+          <a class="nav-link" href="qualifications.html">
             <span>Skills</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="service_HTML.html">
+          <a class="nav-link" href="service.html">
             <span>Service</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="semiconductor-ai_HTML.html">
+          <a class="nav-link" href="semiconductor-ai.html">
             <span>Semiconductor + AI</span>
           </a>
         </li>
+        <li class="nav-item">
+        <a class="nav-link" href="javascript:;" onclick="toggleStyleSheet()" title="Change Theme">
+            <span><i class="fa fa-paint-brush" aria-hidden="true"></i></span>
+          </a>
+      </li>
       </ul>
     </nav>
 
-    <div class="page-title">
+    <header class="page-title">
       <h1>Projects</h1>
-    </div>
+    </header>
 
-    <div class="project-container">
-      <div class="project-image-section">
-        <img
-          src="pictures/single-cycle-processor-diagram.png"
-          alt="Picture of Processor Project"
-        />
-      </div>
-      <div class="project-text-section">
-        <h2>ARMv8 Processor (single-cycle)</h2>
-        <h3>Texas A&M University - date</h3>
-        <p>
-          One of the projects that has been on my waitlist as of recently. I
-          originally developed a single-cycle MIPS processor for my computer
-          architecture class as one of the class projects. I am looking forward
-          to building upon this single-cycle processor and develop a more modern
-          version of it, especially with the knowledge that I will be gaining
-          from my Advanced Computer Architecture class.
-        </p>
-        <ul>
-          <li>
-            <a
-              href="https://courses.cs.washington.edu/courses/cse378/09wi/lectures/lec07.pdf"
-              >MIPS reference</a
-            >
-          </li>
-          <li>
-            <a href="https://dl.acm.org/doi/abs/10.1145/356683.356687"
-              >Pipelined Processor Reference</a
-            >
-          </li>
-          <li>
-            <a href="https://ieeexplore.ieee.org/abstract/document/476078"
-              >Superscalar Processor Refernece</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
+    <main class="content">
+      <article class="project-container">
+        <div class="project-image-section">
+          <img
+            src="pictures/single-cycle-processor-diagram.png"
+            alt="Picture of Processor Project"
+          />
+        </div>
+        <article class="project-text-section">
+          <h2>MIPS Processor (single-cycle)</h2>
+          <h3>Texas A&M University - date</h3>
+          <p>
+            One of the projects that has been on my waitlist as of recently. I
+            originally developed a single-cycle MIPS processor for my computer
+            architecture class as one of the class projects. The single-cycle processor included
+            a program counter, controller, 32-bit register file, sign-extender, ALU, and data/instruction memory
+            the data and instruction memories are separated for the time being as a band-aid fix for structural hazards
+            when I start implementing a pipeline to the processor.
+            I am looking forward to building upon this single-cycle processor and develop a
+            more modern version of it. These modifications include pipelining, as mentioned earlier, and a
+            basic implementation of a 2-bit branch predictor. With the knowledge I will
+            be gaining from my Advanced Computer Architecture class, I will be implementing
+            a Superscalar processor to further improve throughput through instruction parallelism and implement a basic cache design.
+            Future problems that I may have to tackle when implementing these include data and control (branching) dependencies and will
+            think of a solution to solve for these problems. The skills I will be gaining from this endeavor definitely includes enhancing
+            my verilog debugging skills and learn to use other tools suhc as surf, a gtkwave alternative with more beautiful graphics.
+          </p>
+          <ul class="References">
+            <li>
+              <a
+                href="https://courses.cs.washington.edu/courses/cse378/09wi/lectures/lec07.pdf"
+                >MIPS reference</a
+              >
+            </li>
+            <li>
+              <a href="https://dl.acm.org/doi/abs/10.1145/356683.356687"
+                >Pipelined Processor Reference</a
+              >
+            </li>
+            <li>
+              <a href="https://ieeexplore.ieee.org/abstract/document/476078"
+                >Superscalar Processor Refernece</a
+              >
+            </li>
+          </ul>
+        </article>
+      </article>
 
-    <div class="project-container">
-      <div class="project-image-section">
-        <img
-          src="pictures/monopoly-simulator-class-diagram.png"
-          alt="Picture Monopoly Simulator Project"
-        />
-      </div>
-      <div class="project-text-section">
-        <h2>Monopoly Simulator</h2>
-        <h3>Self-completed - date</h3>
-        <p>
-          This is one of the projects that I've been most proud of. This was
-          develop to expedite the process of my AP environmental science project
-          that required me to play a game of Monopoly with set rules and see how
-          the number of players affected environmental resources. I took upon
-          the challenge and developed a simulation that would take a couple of
-          seconds to produce an output that would otherwise take hours of
-          tedious playing and recording results. This project was develop in
-          Java in a minimalistic IDE to test my computer science knowledge by
-          using Queues, Stacks, and Object Oriented Programming (OOP) such as
-          interfaces, abstract classes, and inheritance.
-        </p>
-        <ul>
-          <li>
-            <a href="https://monopoly.fandom.com/wiki/Monopoly_Rules"
-              >Rules Reference</a
-            >
-          </li>
-          <li>
-            <a href="https://monopoly.fandom.com/wiki/Category:Cards"
-              >Cards Reference</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
+      <article class="project-container">
+        <div class="project-image-section">
+          <img
+            src="pictures/monopoly-simulator-class-diagram.png"
+            alt="Picture Monopoly Simulator Project"
+          />
+        </div>
+        <article class="project-text-section">
+          <h2>Monopoly Simulator</h2>
+          <h3>Self-completed - date</h3>
+          <p>
+            This is one of the projects that I've been most proud of. This was
+            develop to expedite the process of my environmental science
+            project that required me to play a game of Monopoly with set rules
+            and see how the number of players affected environmental resources.
+            I took upon the challenge and developed a simulation that would take
+            a couple of seconds to produce an output that would otherwise take
+            hours of tedious playing and recording results. This project was
+            developed in Java in a minimalistic IDE to test my computer science
+            knowledge by translating the original game's object traits and organized them into 
+            1 interface, 8 object classes, and 4 data structures such as arrays, stacks, queues, and linked lists.
+            The game output was put into a file thorugh BufferedWriter and was used to extrapolate future behavior and
+            predict outcomes when the number of players changes.
+          </p>
+          <ul class="References">
+            <li>
+              <a href="https://monopoly.fandom.com/wiki/Monopoly_Rules"
+                >Rules Reference</a
+              >
+            </li>
+            <li>
+              <a href="https://monopoly.fandom.com/wiki/Category:Cards"
+                >Cards Reference</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/smartapplez/APES_Monopoly_Simulator"
+                >GitHub</a
+              >
+              <i class="fa fa-github" aria-hidden="false"></i>
+            </li>
+          </ul>
+        </article>
+      </article>
+    </main>
+    <script src="functions.js"></script>
   </body>
 </html>

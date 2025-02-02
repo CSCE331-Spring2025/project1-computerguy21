@@ -4,47 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Armijo - Service</title>
-    <!-- <link rel="stylesheet" href="style1.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/c2bdbf7f1e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="fixed-top-bar">
       <ul class="navbar">
         <li class="nav-item">
-          <a class="nav-link" href="index_HTML.html">
+          <a class="nav-link" href="index.html">
             <span>Home</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="portfolio_HTML.html">
+          <a class="nav-link" href="portfolio.html">
             <span>Projects</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="qualifications_HTML.html">
+          <a class="nav-link" href="qualifications.html">
             <span>Skills</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="service_HTML.html">
+          <a class="nav-link" href="service.html">
             <span>Service</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="semiconductor-ai_HTML.html">
+          <a class="nav-link" href="semiconductor-ai.html">
             <span>Semiconductor + AI</span>
           </a>
         </li>
+        <li class="nav-item">
+        <a class="nav-link" href="javascript:;" onclick="toggleStyleSheet()" title="Change Theme">
+            <span><i class="fa fa-paint-brush" aria-hidden="true"></i></span>
+          </a>
+      </li>
       </ul>
     </nav>
 
-    <div class="page-title">
+    <header class="page-title">
       <h1>Volunteer/Service</h1>
-    </div>
+    </header>
 
-    <div class="service-page-container">
-      <div class="service-container">
+    <main class="service-page-container">
+      <article class="service-container">
         <div class="service-image-section">
-          <img src="" alt="icon of a notebook and pencil" />
+          <!-- <img src="" alt="icon of a notebook and pencil" /> -->
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
         </div>
         <div class="service-text-section">
           <h2>Notetaker (CSCE 313)</h2>
@@ -61,12 +70,12 @@
             visual detail.
           </p>
         </div>
-      </div>
+      </article>
 
-      <div class="service-container">
+      <article class="service-container">
         <div class="service-image-section">
           <img
-            src=""
+            src="pictures/houston-food-bank-box-food.png"
             alt="Icon of an apple (reminiscent of the Houston Food Bank Logo)"
           />
         </div>
@@ -79,7 +88,8 @@
             in giving out food during the pandemic to people in need of food.
           </p>
         </div>
-      </div>
-    </div>
+      </article>
+    </main>
+    <script src="functions.js"></script>
   </body>
 </html>

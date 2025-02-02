@@ -4,71 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Armijo - skills</title>
-    <!-- <link rel="stylesheet" href="style1.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/c2bdbf7f1e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="skills-page">
+  <body>
     <!-- navbar section -->
     <nav class="fixed-top-bar">
       <ul class="navbar">
         <li class="nav-item">
-          <a class="nav-link" href="index_HTML.html">
+          <a class="nav-link" href="index.html">
             <span>Home</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="portfolio_HTML.html">
+          <a class="nav-link" href="portfolio.html">
             <span>Projects</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="qualifications_HTML.html">
+          <a class="nav-link" href="qualifications.html">
             <span>Skills</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="service_HTML.html">
+          <a class="nav-link" href="service.html">
             <span>Service</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="semiconductor-ai_HTML.html">
+          <a class="nav-link" href="semiconductor-ai.html">
             <span>Semiconductor + AI</span>
           </a>
         </li>
+        <li class="nav-item">
+        <a class="nav-link" href="javascript:;" onclick="toggleStyleSheet()" title="Change Theme">
+            <span><i class="fa fa-paint-brush" aria-hidden="true"></i></span>
+          </a>
+      </li>
       </ul>
     </nav>
 
     <!-- skills webpage section -->
-    <div class="resume-container">
+    <!-- Note to self: make the style similar to "content"-->
+    <header>
       <h1>Skills/Qualifications</h1>
-      <p>Insert the resume here</p>
-      <iframe
-        src="https://drive.google.com/file/d/1FCVfcrsRuCduJW_KIdqYLRv4CkOPI-Av/preview"
-      ></iframe>
-    </div>
+    </header>
 
-    <div class="skills-container">
-      <div class="skills-section">
-        <h3>Education</h3>
-        <p>B.S Computer Engineering - Texas A&M University</p>
-        <p>Find out more about Education formatting</p>
-      </div>
-      <div class="skills-section">
-        <h3>Technical Skills</h3>
-        <ul>
-          <li>Verilog</li>
-          <li>C, C++</li>
-          <li>Linux (Arch btw)</li>
-          <li>Bash scripting</li>
-        </ul>
-        <h3>Scholarships</h3>
-        <ul>
-          <li>National Hispanic Scholars</li>
-          <li>National Hispanic Recognition Scholarship</li>
-          <li>Regent's Scholars</li>
-        </ul>
-      </div>
-    </div>
-    <div class="skills-section"></div>
+    <main class="skills-page">
+      <article class="resume-container">
+        <h2>Resume</h2>
+        <iframe
+          src="https://drive.google.com/file/d/1FCVfcrsRuCduJW_KIdqYLRv4CkOPI-Av/preview"
+        ></iframe>
+      </article>
+
+      <article class="skills-container">
+        <article class="skills-section">
+          <h3>Education</h3>
+
+          <p>
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i> B.S Computer
+            Engineering - Texas A&M University
+          </p>
+          <!-- <p>Find out more about Education formatting</p> -->
+        </article>
+        <article class="skills-section">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li><i class="fa fa-code" aria-hidden="true"></i></li>
+            <li>Verilog</li>
+            <li>C, C++</li>
+            <li>Linux (Arch btw)</li>
+            <li>Bash scripting</li>
+          </ul>
+        </article>
+        <article class="skills-section">
+          <h3>Scholarships</h3>
+          <ul>
+            <li>National Hispanic Scholars</li>
+            <li>National Hispanic Recognition Scholarship</li>
+            <li>Regent's Scholars</li>
+          </ul>
+        </article>
+      </article>
+    </main>
+    <script src="functions.js"></script>
   </body>
 </html>

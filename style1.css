@@ -41,9 +41,6 @@ article {
     border-radius: 10px;
     
 }
-.page-title{
-    
-}
 
 .fixed-top-bar {
     position: fixed;
@@ -156,6 +153,9 @@ article {
     color: #0077b5;
     font-weight: bold;
     transition: color 0.3s;
+}
+.network-icons li{
+    font-size: 2.5rem;
 }
 .network-icons li a:hover {
     color: #005582;
@@ -285,11 +285,25 @@ article {
     margin-left: 5px;
     margin-right: 5px;
 }
+.service-container i{
+    font-size: 7rem;
+    display: block;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-self: center;
+}
 .service-image-section{
-    flex: 0.3;
+    flex: 0.4;
+    align-self: center;
+    min-width: 250px;
+    margin: 0px 10px;
 }
 .service-text-section{
     flex: 1;
+    min-width: 300px;
 }
 
 /*-------------------- Semiconduct and AI Webpage --------------------*/

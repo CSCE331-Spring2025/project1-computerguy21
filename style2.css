@@ -166,7 +166,16 @@ footer textarea:focus {
     margin-bottom: 0px;
 } */
 .network-icons{
-    justify-self: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.network-icons li{
+    list-style: none;
+}
+.network-icons a{
+    font-size: 2rem;
 }
 .description-side h1{
     font-size: 1.8rem;
